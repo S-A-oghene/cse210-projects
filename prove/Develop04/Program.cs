@@ -1,9 +1,21 @@
 using System;
 
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop04 World!");
+        Console.WriteLine("Welcome to the Activity Program!");
+
+        // Create instances of activities
+        Activity breathingActivity = new BreathingActivity();
+        Activity reflectingActivity = new ReflectingActivity();
+        Activity listingActivity = new ListingActivity();
+
+        // Run activities
+        breathingActivity.Run();
+        reflectingActivity.Run();
+        listingActivity.Run();
+
+        Console.WriteLine("Program completed.");
     }
 }
